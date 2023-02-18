@@ -1,1 +1,4 @@
-actix-trpc/target
+*/target
+*/Cargo.lock
+rust-trpc/rust-server/target
+rust-trpc/rust-server/Cargo.lock

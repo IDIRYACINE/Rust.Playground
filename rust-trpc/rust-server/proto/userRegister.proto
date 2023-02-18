@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package userRegister;
+
+service UserRegister {
+    rpc register_user (RegisterUserRequest) returns (RegisterUserReply);
+    rpc load_all_users (Empty) returns (UsersReply);
+
+}
+
+message Empty{
+}
+
+message RegisterUserRequest {
+   string name = 1;
+}
+
+message RegisterUserReply {
+    string message = 1;
+}
+
+message UsersReply{
+    repeated string users = 1;
+}
